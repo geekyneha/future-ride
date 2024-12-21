@@ -1,0 +1,159 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+  
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    flex-wrap: wrap; 
+   
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    height: 70vh;
+}
+
+hr {
+    height: 3px;
+    background-color: black; 
+    border: none; 
+    width: 40%;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.bold {
+    font-size: 5rem;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    background: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+    background: black;
+    color: white;
+}
+
+.fa-arrow-right, .fa-play {
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.text {
+    font-size: 1.1rem;
+    text-align: center;
+    width:100px;
+}
+
+.right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+}
+
+img {
+   
+    z-index: 2;
+}
+
+.custom-shape {
+    position: absolute;
+    right: 0;
+    width: 500px; 
+    height: 500px; 
+    border-top-left-radius: 300px;
+    border-top-right-radius: 0; 
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 0; 
+    background: #DBDBDB;
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: 200vh;
+    }
+
+    .left-container {
+        align-items: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .bold {
+        font-size: 3rem;
+    }
+
+    hr {
+        width: 60%;
+    }
+
+    .cta {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .text {
+        margin: 10px 0;
+    }
+
+    .right-container {
+        margin-top: 20px;
+    }
+
+    img {
+        max-width: 300px;
+    }
+
+    .custom-shape {
+        width: 300px;
+        height: 300px;
+        border-top-left-radius: 200px;
+        border-bottom-left-radius: 200px;
+    }
+}
